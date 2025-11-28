@@ -17,16 +17,16 @@ const NewTodo = (props) => {
     }
 
   return (
-    <form onSubmit={handleSubmit} className="bg-[pink] border px-3 py-4 my-3 rounded-md">
+    <form onSubmit={handleSubmit} className="bg-[pink] sm:w-[600px] mx-auto border px-3 py-4 my-3 rounded-md">
         <div>
             <label className="w-[110px] font-medium inline-block" htmlFor="title"> Title : </label>
-            <input onChange={handleChange} value={todo.title} type="text" name="title" id="title" className="border rounded px-1 py-0.5 focus:bg-white" />
+            <input onChange={handleChange} value={todo.title} type="text" name="title" id="title" className="border rounded px-1 py-0.5 focus:bg-white w-[70%]" />
         </div>
         <div className="py-3">
             <label className="w-[110px] font-medium inline-block" htmlFor="desc"> Description : </label>
-            <input onChange={handleChange} value={todo.desc} type="text" name="desc" id="desc" className="border rounded px-1 py-0.5 focus:bg-white" />
+            <input onChange={handleChange} value={todo.desc} type="text" name="desc" id="desc" className="border rounded px-1 py-0.5 focus:bg-white w-[70%]" />
         </div>
-        <button className="border rounded-md ml-[110px] w-48 px-2 py-1 bg-green-600 text-sm font-medium text-white"> Add Todo </button>
+        <button className="border rounded-md ml-[110px] w-[70%] px-2 py-1 bg-green-600 text-sm font-medium text-white"> Add Todo </button>
     </form>
   )
 }
